@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account &amp; Data Deletion — Cashlend</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #5b6b7b;
+      --border: #d6dce2;
+      --brand: #1880b0;
+      --brand-dark: #0f6690;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, var(--brand), #1aa3c9);
+      color: #fff;
+      padding: 48px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 1.9rem; }
+    header p { margin: 0; opacity: 0.92; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 28px 20px 80px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+    }
+    h2 { font-size: 1.2rem; color: var(--brand-dark); margin: 26px 0 10px; }
+    h2:first-child { margin-top: 0; }
+    p { margin: 10px 0; }
+    ol, ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    .email-box {
+      display: block;
+      text-align: center;
+      background: #e9f4fa;
+      border: 1px solid #bfe0f0;
+      border-radius: 12px;
+      padding: 18px;
+      margin: 18px 0;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+    .email-box a { color: var(--brand-dark); text-decoration: none; }
+    .muted { color: var(--muted); font-size: 0.92rem; }
+    footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Account &amp; Data Deletion</h1>
+    <p>How to delete your Cashlend account and personal data</p>
+  </header>
+
+  <div class="wrap">
+    <div class="card">
+      <p>
+        This page explains how to request the deletion of your <strong>Cashlend</strong> account and the
+        personal data associated with it.
+      </p>
+
+      <h2>Request deletion by email</h2>
+      <p>
+        If you would like your profile and personal data to be deleted, please send a request to our
+        support team from the email address registered to your account:
+      </p>
+
+      <span class="email-box">
+        <a href="mailto:info@cashlend.bg?subject=Account%20Deletion%20Request">info@cashlend.bg</a>
+      </span>
+
+      <p>In your message, please include:</p>
+      <ul>
+        <li>The subject line <strong>"Account Deletion Request"</strong></li>
+        <li>The full name and email address linked to your Cashlend account</li>
+      </ul>
+      <p class="muted">
+        Sending the request from your registered email address helps us verify your identity and process
+        your request faster.
+      </p>
+
+      <h2>Delete your account from the app</h2>
+      <p>You can also delete your account directly in the Cashlend mobile app:</p>
+      <ol>
+        <li>Open the Cashlend app and sign in.</li>
+        <li>Go to <strong>Profile</strong>.</li>
+        <li>Tap <strong>Delete Account</strong> and confirm.</li>
+      </ol>
+
+      <h2>What is deleted</h2>
+      <p>
+        When your request is completed, your account is closed and your personal data (such as your name,
+        email, phone number, profile picture, and identity information) is deleted or anonymized.
+      </p>
+
+      <h2>What may be retained</h2>
+      <p>
+        Certain information must be kept for a limited period after account closure where we are legally
+        required to retain it — for example, transaction and financial records that we must keep to comply
+        with accounting, tax, and anti–money-laundering (AML) regulations. This data is securely stored
+        and deleted once the legal retention period expires.
+      </p>
+
+      <h2>How long it takes</h2>
+      <p>
+        We aim to confirm and process valid deletion requests within 30 days of receiving them. We may
+        contact you if we need additional information to verify your identity.
+      </p>
+
+      <h2>Questions</h2>
+      <p>
+        For any questions about deleting your account or your data, contact us at
+        <a href="mailto:info@cashlend.bg">info@cashlend.bg</a>.
+      </p>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> Cashlend. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
